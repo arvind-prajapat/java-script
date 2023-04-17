@@ -1,0 +1,152 @@
+Exp :- 1
+
+<p onmousemove="myfunc()">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nulla. Explicabo est quam mollitia 
+  laboriosam eveniet, omnis ex, esse, libero nam maxime architecto? Vero provident, nostrum ea nulla consectetur hic?
+</p>
+
+<script>
+    function myfunc(){
+        console.log('Func Called');
+        console.log('Show Big Image');
+    }
+</script>
+
+Exp :- 2
+
+<p onmouseover="myfunc(10,20,this)">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quo placeat tempora debitis, suscipit vitae. A officiis sapiente laboriosam placeat, odio dolores quaerat cumque eum. Dicta illo voluptates officiis. Rerum?
+</p>
+
+<script>
+    function myfunc(a,b,xyz){
+        console.log('Func Called',a,b);
+        console.log(xyz);
+
+        xyz.style.border="1px solid";
+        xyz.style.background = "gray";
+        xyz.style.fontSize="30px";
+    }
+</script>
+
+Exp :- 3
+
+<input type="text" onfocus="myfunc(this)" />
+
+<script>
+    function myfunc(xyz){
+        console.log('Focus Working');
+        console.log(xyz);
+        xyz.style.border = "3px solid green";
+        xyz.style.width="250px";
+        xyz.style.height="50px";
+        xyz.style.paddingLeft = "30px";
+        xyz.style.textTransform = "uppercase";
+
+        console.log(xyz.value);
+        console.log(xyz.value.length);
+        
+    }
+</script>
+
+Exp :- 4
+
+<input type="text" onfocus="myfunc(this)" />
+
+<script>
+    function myfunc(xyz){
+        console.log('Focus Event Called');
+        console.log(xyz);
+        xyz.id = "x1";
+    }
+</script>
+
+<style>
+    #x1{
+        border:solid;
+        width: 300px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+</style>
+
+Exp :- 5
+
+<p onmouseover="myfunc(this)">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum debitis quas dignissimos ratione perspiciatis dolore esse numquam, vero corporis nulla nam ex voluptatum in, consequatur architecto at, aliquid possimus nihil.
+</p>
+
+<style>
+    .m1{
+        border:solid;
+    }
+    .m2{
+        background-color: gray;
+    }
+</style>
+
+<script>
+    function myfunc(rec)
+    {   
+        console.log(rec);
+        rec.className = "m1 m2";
+    }
+</script>
+
+Exp :- 6
+
+<select onchange="myfunc(this)">
+    <option value="1"> Nike </option>
+    <option value="2"> Adidas </option>
+    <option value="3"> Puma </option>
+</select>
+
+<input type="file" onchange="myfunc(this)"/>
+
+<script>
+    function myfunc(rec){
+        console.log(rec);
+        console.log(rec.value);
+    }
+</script>
+
+Exp :- 7
+
+<h2 onclick="myfunc(this)">Product Details</h2>
+<p  style="display: none;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nostrum. Dolorem cumque perspiciatis corporis minus voluptate quia deserunt exercitationem, nobis natus. Modi, sunt eos. Unde voluptatibus praesentium tenetur. Nisi, sit!
+</p>
+
+<script>
+    function myfunc(curEle){
+        console.log('Func Called');
+        console.log(curEle);
+        console.log(curEle.nextElementSibling);
+
+        curEle.nextElementSibling.style.display = 'block';
+        
+    }
+</script>
+
+Exp :- 7
+<input type="checkbox" onchange="myfunc(this)" />
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quia consequatur culpa sequi. Tenetur consequatur eius obcaecati, nobis error ipsum cupiditate quo unde nesciunt, nemo dolore eaque, adipisci non vero?
+</p>
+
+
+<script>
+    function myfunc(curele){
+        console.log(curele);
+        console.log(curele.checked); //true or false
+        console.log(curele.nextElementSibling);
+
+        if(curele.checked == true){
+            curele.nextElementSibling.style.display = "block";
+        }
+        else{
+            curele.nextElementSibling.style.display = "none";
+        }
+    }
+</script>
