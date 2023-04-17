@@ -47,3 +47,48 @@ Exp :- 3
 
 Exp :- 4
 
+
+<script>
+    
+    console.log(x);
+
+
+    var x; //declare (getting hoisted)
+    x=20; //assignment ( not getting hoisted)
+
+
+    console.log(y);
+
+    let y; // hoisting is  not allowed for keyword let
+</script>
+
+<!-- JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration variables  to the top of their scope, prior to execution of the code -->
+
+Exp:- 5
+
+<script>
+    {
+        var x=10;
+        let y=20;
+    }
+
+    console.log('Outside Scope');
+    console.log(x);
+    console.log(y);
+</script>
+
+Exp:- 6
+
+<script>
+
+    var age = 20;
+
+    console.log('Akshay Patil ${age} ');
+    console.log("Akshay Patil  ${age} ");
+    console.log(`Akshay Patil  ${age} `);
+</script>
+
+<!-- 
+    template literal :
+    
+-->
