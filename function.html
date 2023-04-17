@@ -50,3 +50,95 @@ Exp :- 4
 </script>
 
 <button onclick="openModalBox()">Login</button>
+
+Exp :- 5
+<script>
+    function calculateDiscount(amount,b)
+    {
+        console.log('Func Called');
+        console.log(amount);
+        console.log(b);
+
+        discount = amount * b/100;
+        console.log(discount);
+        finalPrice = amount - discount;
+        console.log(finalPrice);
+    }
+</script>
+
+<button onclick="calculateDiscount(10000,30)">Enter</button>
+
+Exp :- 6
+
+<script>
+    function marks(english,maths,science)
+    {   
+        // console.log(english,maths,science);
+        total = english + maths + science;
+        console.log(total);
+        percentage = total/300 * 100;
+        console.log(percentage);
+    }
+
+    marks(80,100,90);
+</script>
+
+Exp :- 7
+
+<script>
+    function simpleInterest(amount , roi , duration)
+    {
+        // console.log(amount , roi , duration);
+        si = amount*roi*duration/100;
+        console.log(si);
+        finalValue = amount + si;
+        console.log(finalValue);
+    }
+
+    simpleInterest(20000,8,20);
+    simpleInterest(10000,8,20);
+    simpleInterest(10000,8,30);
+</script>
+
+Exp :- 8
+
+<button onclick="showPara()">Show</button>
+<button onclick="hidePara()">Hide</button>
+
+<script>
+    function showPara(){
+        console.log('SHOW PARA');
+    }
+
+    function hidePara(){
+        console.log('HIDE PARA');
+    }
+</script>
+
+Exp :- 9
+
+<html>
+    <input type="text" onkeydown="searchValue()" />
+
+<script>
+    function searchValue(){
+        console.log('Func Called');
+        console.log('Search Data on Key Down');
+    }
+</script>
+    
+    
+</html>
+
+Exp :- 10
+
+<p onmousemove="myfunc()">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nulla. Explicabo est quam mollitia laboriosam eveniet, omnis ex, esse, libero nam maxime architecto? Vero provident, nostrum ea nulla consectetur hic?
+</p>
+
+<script>
+    function myfunc(){
+        console.log('Func Called');
+        console.log('Show Big Image');
+    }
+</script>
