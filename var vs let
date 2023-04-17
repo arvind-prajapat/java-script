@@ -1,0 +1,49 @@
+Exp:- 1
+<script>
+  'use strict';
+  var x=1;
+  console.log(x);
+</script>
+
+<!-- 
+
+    []------Array
+    {}------scope
+    ()----- Function
+
+    ''
+    ""
+    ``
+ -->
+ 
+ Exp :- 2
+ 
+ <script>
+    //declaring a variable
+    // default value is undefined
+    var x;
+
+    let y;
+
+    console.log(x);
+    console.log(y);
+</script>
+
+Exp :- 3
+
+<script>
+    //declare 
+    var x;
+    var x;
+    var x;
+    console.log(x);
+
+
+    let y;
+    let y;
+</script>
+
+<!-- you can not redeclare variable using let keyword under same scope -->
+
+Exp :- 4
+
